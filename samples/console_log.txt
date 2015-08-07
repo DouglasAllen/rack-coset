@@ -1,0 +1,22 @@
+[2015-08-07 10:13:18] INFO  WEBrick 1.3.1
+[2015-08-07 10:13:18] INFO  ruby 2.2.2 (2015-04-13) [i686-linux]
+[2015-08-07 10:13:18] INFO  WEBrick::HTTPServer#start: pid=8540 port=9266
+[2015-08-07 10:14:01] ERROR NoMethodError: undefined method `id' for #<Atom::Collection:0xb8cb2178>
+	glueball.rb:28:in `block in feed'
+	glueball.rb:28:in `each'
+	glueball.rb:28:in `find'
+	glueball.rb:28:in `feed'
+	glueball.rb:39:in `block in <class:Glueball>'
+	/home/kb9agt/github/coset/lib/coset.rb:28:in `block in run'
+	/home/kb9agt/github/coset/lib/coset.rb:22:in `each'
+	/home/kb9agt/github/coset/lib/coset.rb:22:in `run'
+	/home/kb9agt/github/coset/lib/coset.rb:13:in `call'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/showstatus.rb:20:in `call'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+	/home/kb9agt/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+localhost - - [07/Aug/2015:10:14:01 CDT] "GET /blog1 HTTP/1.1" 500 342
+- -> /blog1
+
